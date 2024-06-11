@@ -1,0 +1,15 @@
+def calculate_channel_current_and_voltage():
+    # Get user inputs
+    payload_peak_power = float(input("Enter the Payload Peak Power (in watts): "))
+    channel_rail_current = float(input("Enter the Channel Rail Current (in amperes): "))
+
+    # Calculate channel rail voltage
+    channel_rail_voltage = payload_peak_power / channel_rail_current
+
+    # Display the results
+    print(f"Calculated Channel Rail Voltage: {channel_rail_voltage:.2f} V")
+    print(f"Given Channel Rail Current: {channel_rail_current} A")
+    print(f"Given Payload Peak Power: {payload_peak_power} W")
+
+if __name__ == "__main__":
+    calculate_channel_current_and_voltage()
