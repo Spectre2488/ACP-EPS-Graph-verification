@@ -1,0 +1,19 @@
+def calculate_battery_power():
+    """
+    Calculate battery power based on user inputs for battery voltage and current.
+    """
+
+    # Step 1: Get user inputs
+    battery_voltage = float(input("Enter the Battery Voltage (in volts): "))  # Reference 1
+    battery_current = float(input("Enter the Battery Current (in amperes): "))  # Reference 2
+
+    # Step 2: Calculate battery power
+    battery_power = battery_voltage * battery_current
+
+    # Step 3: Display the results
+    print(f"Calculated Battery Power: {battery_power:.2f} W")  # Reference 3
+    print(f"Given Battery Voltage: {battery_voltage} V")
+    print(f"Given Battery Current: {battery_current} A")
+
+if __name__ == "__main__":
+    calculate_battery_power()
